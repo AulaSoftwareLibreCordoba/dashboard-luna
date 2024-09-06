@@ -16,8 +16,8 @@ function Dashboard() {
   };
 
   return (
-    <div className="flex-col bg-[#0f0c29] h-screen -scroll-my-0 overflow-y-hidden flex md:flex md:w-80">
-      <div className="flex flex-col items-center -scroll-my-0 overflow-y-hidden">
+    <div className="flex-col bg-[#0f0c29] h-screen -scroll-my-0 overflow-y-hidden hidden md:flex md:w-80">
+      <div className="flex flex-col items-center">
         <div className="text-center mt-5 p-10 text-white bg-[#0f0c29] w-12 h-12 flex items-center justify-center ease-in-out">
           <div className="text-white">
             <FontAwesomeIcon icon={faChartPie} className="size-12" />
@@ -51,9 +51,9 @@ function Dashboard() {
         </a>
       </div>
       <div className="p-16">
-        <div className="mx-auto text-center p-4 text-white bg-red-800 hover:bg-red-900 rounded-full size-14 flex items-center justify-center transition-colors duration-300 ease-in-out">
+        <div className="flex items-center justify-center p-4 mx-auto text-center text-white transition-colors duration-300 ease-in-out bg-red-800 rounded-full hover:bg-red-900 size-14">
           <a href="/">
-            <div className="text-white hover:rounded-full cursor-pointer size-7">
+            <div className="text-white cursor-pointer hover:rounded-full size-7">
               <FontAwesomeIcon icon={faSignOut} className="size-7" />
             </div>
           </a>
