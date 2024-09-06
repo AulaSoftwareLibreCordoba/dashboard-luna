@@ -6,6 +6,12 @@ COPY package*.json ./
 
 RUN npm install axios
 
+RUN npm install --save @fortawesome/fontawesome-free
+
+RUN npm install -D tailwindcss postcss autoprefixer
+
+RUN npx tailwindcss init -p
+
 COPY . .
 
 RUN npm run build
