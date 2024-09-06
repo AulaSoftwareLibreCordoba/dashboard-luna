@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import Dashboard from "./dashboard";
+import Card from "./cardDenuncias";
 
 function Denuncias() {
   const [denuncias, setDenuncias] = useState([]);
-  const url = "http://5.196.26.7:8080/denuncias";
+  const url = "https://jsonplaceholder.typicode.com/users/";
 
   // Función para capturar las denuncias
   const captDenuncias = async () => {
@@ -34,9 +35,9 @@ function Denuncias() {
   return (
     <div className="flex flex-row">
       <Dashboard />
-      <div>
+      <div className=" items-center w-screen flex flex-wrap">
         {denuncias.map((denuncia) => (
-          <h1 key={denuncia.id}>{denuncia.resumen}</h1> // Mostrar el resumen o cualquier otro dato
+          <Card id={denuncia.id} name={denuncia.name} />
         ))}
       </div>
     </div>
