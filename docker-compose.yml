@@ -1,9 +1,7 @@
-version: "3.8"
-
 services:
   react-app:
     build:
-      context: ./dashboard-luna
+      context: ./
       dockerfile: Dockerfile
     ports:
       - "3000:80"
