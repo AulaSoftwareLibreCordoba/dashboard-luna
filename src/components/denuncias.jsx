@@ -4,9 +4,13 @@ import Card from "./cardDenuncias";
 
 function Denuncias() {
   const [denuncias, setDenuncias] = useState([]);
+  const [isSearching, setisSearching] = useState("");
+
   const url = "https://jsonplaceholder.typicode.com/users/";
 
   // Función para capturar las denuncias
+  const handleDelete = (id) => {};
+
   const captDenuncias = async () => {
     try {
       const response = await fetch(url, {
@@ -36,9 +40,12 @@ function Denuncias() {
     <div className="flex flex-row">
       <Dashboard />
       <div className=" items-center w-screen flex flex-wrap">
-        {denuncias.map((denuncia) => (
-          <Card id={denuncia.id} name={denuncia.name} />
-        ))}
+        {isSearching ==
+          ""(
+            denuncias.map((denuncia) => (
+              <Card id={denuncia.id} name={denuncia.name} />
+            ))
+          )}
       </div>
     </div>
   );
