@@ -6,6 +6,7 @@ import { faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { faSignOut } from "@fortawesome/free-solid-svg-icons";
 import { faChartPie } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -32,14 +33,14 @@ function Dashboard() {
             </div>
           </div>
         </a>
-        <a href="/denuncias-dash">
+        <Link to={"/denuncias-dash"}>
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
             <div className="flex items-center text-center text-md md:m-3 md:text-xl">
               <FontAwesomeIcon icon={faCircleExclamation} className="size-7" />
               <p class="mx-auto font-bold text-lg">Denuncias</p>
             </div>
           </div>
-        </a>
+        </Link>
         <a href="/notas-dash">
           <div className="p-4 text-white hover:bg-[#252849] cursor-pointer">
             <div className="flex items-center text-center text-md md:m-3 md:text-xl">

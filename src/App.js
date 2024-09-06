@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/dashboard";
+import Denuncias from "./components/denuncias";
 import "./App.css";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/denuncias-dash" element={<Denuncias />} />
       </Routes>
     </BrowserRouter>
   );
