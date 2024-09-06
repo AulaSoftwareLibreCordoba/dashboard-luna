@@ -39,13 +39,15 @@ function Denuncias() {
   return (
     <div className="flex flex-row">
       <Dashboard />
-      <div className=" items-center w-screen flex flex-wrap">
-        {isSearching ==
-          ""(
-            denuncias.map((denuncia) => (
-              <Card id={denuncia.id} name={denuncia.name} />
-            ))
-          )}
+      <div className="items-center w-screen flex flex-wrap">
+        {/* Renderiza las denuncias si no se está buscando */}
+        {isSearching === "" ? (
+          denuncias.map((denuncia) => (
+            <Card key={denuncia.id} id={denuncia.id} name={denuncia.name} />
+          ))
+        ) : (
+          <p>No se encontraron resultados de búsqueda</p>
+        )}
       </div>
     </div>
   );
