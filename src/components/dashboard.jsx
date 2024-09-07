@@ -8,7 +8,7 @@ import { faChartPie } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 function Dashboard() {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  // const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   // const toggleDropdown = () => {
   //   setDropdownVisible(!isDropdownVisible);
