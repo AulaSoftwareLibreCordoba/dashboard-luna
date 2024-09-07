@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 function Denuncias({ id, name, onDelete, url }) {
@@ -13,7 +12,7 @@ function Denuncias({ id, name, onDelete, url }) {
     }
   };
   return (
-    <div className="w-[15rem] h-80 sm:w-[14rem] sm:h-[19rem] md:w-[14rem] md:h-[18rem] lg:w-[15rem] lg:h-[18rem] xl:w-[17rem] xl:h-[20rem] 2xl:w-[14rem] 2xl:h-[20rem] relative p-5 m-5 mx-auto rounded items-center text-base hover:scale-110 transition duration-300 grid bg-[#231d67]">
+    <div className="w-[15rem] h-80 sm:w-[14rem] sm:h-[19rem] md:w-[14rem] md:h-[18rem] lg:w-[15rem] lg:h-[15rem] xl:w-[14rem] xl:h-[20rem] 2xl:w-[15rem] 2xl:h-[20rem] relative p-5 m-5 mx-auto rounded items-center text-base hover:scale-110 transition duration-300 grid bg-[#181343]">
       <div className="grid items-center w-full h-full overflow-hidden text-base texto-pizarra">
         <span className="text-2xl text-center text-white">{name}</span>
         <hr className="w-full mx-auto border-white"></hr>
