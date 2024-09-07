@@ -45,10 +45,27 @@ function Denuncias() {
     );
   };
 
+  const backButton = () => {
+    window.location.href = '/'
+  }
+
   return (
-    <div className="flex flex-row">
-      <Dashboard />
-      <div className="items-center w-screen h-screen flex flex-wrap overflow-y-scroll">
+    <div className="grid flex-row md:flex">
+      <div className="hidden md:flex">
+      <Dashboard/>
+      </div>
+      <header className="justify-center h-18 text-center md:hidden bg-[#191448]">
+        <h1 className="p-5 font-bold text-white">PANEL DE CONTROL - DENUNCIAS</h1>
+
+        <button onClick={backButton} class="cursor-pointer duration-200 hover:scale-125 active:scale-100 border-transparent" title="Go Back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="stroke-blue-300">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path>
+          </svg>
+        </button>
+        
+      </header>
+      
+      <div className="flex flex-wrap items-center w-screen h-screen overflow-y-scroll">
         {isSearching === "" ? (
           denuncias.map((denuncia) => (
             <Card
@@ -68,3 +85,4 @@ function Denuncias() {
 }
 
 export default Denuncias;
+

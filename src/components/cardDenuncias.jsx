@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
 function Denuncias({ id, name, onDelete, url }) {
   const deletePost = async () => {
     try {
@@ -9,19 +13,20 @@ function Denuncias({ id, name, onDelete, url }) {
     }
   };
   return (
-    <div className="w-[15rem] h-80 sm:w-[14rem] sm:h-[19rem] md:w-[15rem] md:h-[19rem] xl:w-[17rem] xl:h-[20rem] 2xl:w-[18rem] 2xl:h-[20rem] relative p-5 m-5 border-solid mx-auto border-black rounded items-center text-base hover:scale-110 transition duration-300 grid">
+    <div className="w-[15rem] h-80 sm:w-[14rem] sm:h-[19rem] md:w-[14rem] md:h-[18rem] lg:w-[15rem] lg:h-[18rem] xl:w-[17rem] xl:h-[20rem] 2xl:w-[14rem] 2xl:h-[20rem] relative p-5 m-5 mx-auto rounded items-center text-base hover:scale-110 transition duration-300 grid bg-[#231d67]">
       <div className="grid items-center w-full h-full overflow-hidden text-base texto-pizarra">
-        <span className="text-2xl text-center">{name}</span>
-        <hr className="w-full mx-auto border-black"></hr>
+        <span className="text-2xl text-center text-white">{name}</span>
+        <hr className="w-full mx-auto border-white"></hr>
       </div>
-      <button
-        onClick={deletePost}
-        className="flex items-center justify-center h-10 px-4 text-white transition duration-300 ease-in-out bg-red-500 border border-red-500 rounded-lg hover:bg-red-600 hover:border-red-600"
+      <button 
+      onClick={deletePost}
+      className="grid items-center justify-center w-10 h-12 mx-auto font-semibold text-white transition-all duration-300 bg-red-700 border-transparent rounded-md shadow-2xl cursor-pointer hover:bg-red-800 xl:w-10"
       >
-        Eliminar
-      </button>
+          <FontAwesomeIcon icon={faTrash} className="size-4" />
+        </button>
     </div>
   );
 }
 
 export default Denuncias;
+
