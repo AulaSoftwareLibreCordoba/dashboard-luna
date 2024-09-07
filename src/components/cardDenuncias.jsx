@@ -12,7 +12,7 @@ function Denuncias({ id, name, onDelete, url }) {
     }
   };
   return (
-    <div className="w-[15rem] h-80 sm:w-[14rem] sm:h-[19rem] md:w-[14rem] md:h-[18rem] lg:w-[15rem] lg:h-[15rem] xl:w-[14rem] xl:h-[20rem] 2xl:w-[15rem] 2xl:h-[20rem] relative p-5 m-5 mx-auto rounded items-center text-base hover:scale-110 transition duration-300 grid bg-[#181343]">
+    <div className="w-[15rem] h-80 sm:w-[14rem] sm:h-[19rem] md:w-[14rem] md:h-[18rem] lg:w-[12.5rem] lg:h-[17rem] xl:w-[12rem] xl:h-[17rem] 2xl:w-[15rem] 2xl:h-[20rem] relative p-5 m-5 mx-auto rounded items-center text-base hover:scale-110 transition duration-300 grid bg-[#181343]">
       <div className="grid items-center w-full h-full overflow-hidden text-base texto-pizarra">
         <span className="text-2xl text-center text-white">{name}</span>
         <hr className="w-full mx-auto border-white"></hr>
