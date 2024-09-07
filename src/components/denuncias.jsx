@@ -54,7 +54,7 @@ function Denuncias() {
       <div className="hidden md:flex">
       <Dashboard/>
       </div>
-      <header className="justify-center h-18 text-center md:hidden bg-[#191448]">
+      <header className="justify-center h-18 text-center md:hidden bg-[#0f0c29]">
         <h1 className="p-5 font-bold text-white">PANEL DE CONTROL - DENUNCIAS</h1>
 
         <button onClick={backButton} class="cursor-pointer duration-200 hover:scale-125 active:scale-100 border-transparent" title="Go Back">

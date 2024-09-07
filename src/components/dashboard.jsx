@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faSign } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { faClipboard } from "@fortawesome/free-solid-svg-icons";
@@ -11,9 +10,9 @@ import { Link } from "react-router-dom";
 function Dashboard() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
-  const toggleDropdown = () => {
-    setDropdownVisible(!isDropdownVisible);
-  };
+  // const toggleDropdown = () => {
+  //   setDropdownVisible(!isDropdownVisible);
+  // };
 
   return (
     <div className="flex-col bg-[#0f0c29] h-screen -scroll-my-0 overflow-y-hidden flex md:flex md:w-80">
@@ -50,15 +49,15 @@ function Dashboard() {
           </div>
         </a>
       </div>
-      <div className="p-16">
-        <div className="flex items-center justify-center p-4 mx-auto text-center text-white transition-colors duration-300 ease-in-out bg-red-800 rounded-full hover:bg-red-900 size-14">
+      <button className="p-16 border-transparent">
+        <div className="flex items-center justify-center p-2 mx-auto text-center text-white transition-colors duration-300 ease-in-out bg-red-800 rounded-full hover:bg-red-900 size-14">
           <a href="/">
-            <div className="text-white cursor-pointer hover:rounded-full size-7">
-              <FontAwesomeIcon icon={faSignOut} className="size-7" />
+            <div className="text-white cursor-pointer hover:rounded-full size-5">
+              <FontAwesomeIcon icon={faSignOut} className="size-5" />
             </div>
           </a>
         </div>
-      </div>
+      </button>
     </div>
   );
 }
