@@ -4,7 +4,7 @@ import Card from "./cardDenuncias";
 
 function Denuncias() {
   const [denuncias, setDenuncias] = useState([]);
-  const [isSearching, setisSearching] = useState("");
+  const [isSearching] = useState("");
   const url = "https://jsonplaceholder.typicode.com/users/";
 
   const captDenuncias = async () => {
