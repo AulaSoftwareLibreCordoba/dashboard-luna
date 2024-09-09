@@ -46,7 +46,7 @@ function Denuncias() {
   };
 
   const backButton = () => {
-    window.location.href = '/'
+    window.location.href = '/inicio'
   }
 
   return (
